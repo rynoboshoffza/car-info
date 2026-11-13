@@ -1,0 +1,8 @@
+# Raw WhatsApp exports contain phone numbers and must never be published
+chat*.txt
+chat*.md
+chats/
+*.zip
+PRIVATE-*
+!README.md
+!UPDATING.md
