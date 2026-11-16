@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Charging — Chery Q Owner Notes</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/site-data.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body data-page="charging">
+<main class="wrap">
+  <div class="page-head"><h1>Charging</h1></div>
+
+  <h2>Public charging and apps</h2>
+  <ul class="clean">
+    <li><strong>PlugShare</strong> is the app owners use to find chargers and plan trips.</li>
+    <li><strong>RF card:</strong> the card supplied with the car is linked to the GridCars app. Load funds in that app, then tap the card. One owner used it without registration on BMW, Mercedes and Rubicon chargers.</li>
+    <li><strong>Apps:</strong> one owner's advice is a single load on GridCars plus the card. Another suggested loading only on arrival. Refund and expiry terms of other apps were not discussed.</li>
+    <li><strong>Prices:</strong> one forwarded mall session receipt: 35.11 kWh to 90% SoC for "T 289.12" (tokens; about 8.2 per kWh if 1 token = R1). Another owner questioned a rate at an Eskom site (image only).</li>
+  </ul>
+
+  <h2 id="cables">Own cable</h2>
+  <ul class="clean">
+    <li>A unit marked <strong>SOCKET</strong> needs your own Type 2 AC cable.</li>
+    <li>Combi chargers (AC + DC) usually have a cable attached, "about 80% of the time" per one owner.</li>
+    <li>Older AC units often have no cable.</li>
+    <li>BMW and Mercedes AC chargers need your own cable.</li>
+  </ul>
+
+  <h2 id="home">Home charging</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Item</th><th>Reported</th></tr>
+    <tr><td>Wall charger</td><td>7 kW, 32 A maximum. Dealer-supplied units are controlled with the Tellus Power app (Bluetooth).</td></tr>
+    <tr><td>Wall charger price</td><td>One owner paid R7,499 at a Chery dealer. Others received it free. See <a href="dealer-truths.html">Dealer truths</a>.</td></tr>
+    <tr><td>Installation (Cape Town, Nov 2026)</td><td>R6,106.50 incl. VAT, 20 m run of 6 mm² cable.</td></tr>
+    <tr><td>Charge power</td><td>The car draws about 6.3–6.7 kW on single phase.</td></tr>
+    <tr><td>Time</td><td>About 6 h for a full charge. 51% to 90% took just over 2 h for one owner.</td></tr>
+  </table></div>
+
+  <h3 style="margin-top:20px">Wall charger current and wiring</h3>
+  <p class="small muted">Owner discussion, not electrical advice. Have a qualified electrician inspect the installation and issue a compliance certificate.</p>
+  <ul class="clean">
+    <li><strong>Amps:</strong> the Tellus Power app can lower the 32 A maximum. Owners reported 16 A (one suggestion) and 20 A (one owner's setting) as alternatives to 32 A.</li>
+    <li><strong>Cable and breaker:</strong> one owner reports a 6 mm² cable through an isolator with a roughly 40 A double-pole breaker. Another owner has 4 mm² (rated 38 A) on a 32 A charger and reports the distribution board feels warm while charging; an electrician was booked to check.</li>
+    <li><strong>Other factors raised:</strong> cable run length, the size of the feed to any sub-board, and loose connections, which high current exposes.</li>
+    <li><strong>Tellus Power app:</strong> connects by Bluetooth. One owner reports it needs a registration step before it finds the unit and it does not show the bound vehicle. Several owners only use the cards.</li>
+  </ul>
+
+  <h2>Solar and inverter</h2>
+  <ul class="clean">
+    <li>One owner charged from 51% to 90% on solar at no cost, with 8–10 kW of panels and about 6.3 kW at the inverter.</li>
+    <li>One owner charges from a 12 kW Deye inverter. On cloudy, rainy days with time-of-use switched off, the car drew about 6.5 kW from the municipal supply while the home battery was full. Their workaround is a separate plug for the portable charger on cloudy days to draw less. Lowering the wall charger current was also suggested.</li>
+    <li>A Deye EV charger connects to a Deye inverter: 7 kW on single phase, 22 kW on three phase. Owners say this is simpler than a separate earth leakage and cable run to the DB.</li>
+    <li>Another owner says that with Home Assistant integrated with the Chery wall charger there is no need to buy a Deye or Sunsynk EV charger.</li>
+  </ul>
+
+  <h2 id="release">Plug stuck in the car</h2>
+  <ul class="clean">
+    <li>Owners fixed it by unlocking the car 2–3 times, or by ending charging in the menu and unlocking. At a charger that needs a card, tap the card to release.</li>
+    <li>A member's summary of the manual:
+      <ul class="clean">
+        <li>Charging finished, car unlocked: plug releases by itself.</li>
+        <li>Charging finished, car locked: unlock the car with the key, then pull the plug.</li>
+        <li>Charging not finished, car locked: press unlock on the key twice in a row.</li>
+        <li>Charging not finished, car unlocked: stop charging on the screen (energy management) or at the charger.</li>
+        <li>Never pull the plug by force. At a DC charger, stop the session first.</li>
+      </ul>
+    </li>
+    <li>Emergency release (lock fault): confirm nothing is charging, open the back door, lift the left luggage compartment cover flap and pull the electronic lock cable, then unplug. Do not use it while charging or if orange high-voltage cable is exposed, and not often. If still stuck, call Chery or roadside assistance.</li>
+  </ul>
+
+  <h2 id="v2l">V2L</h2>
+  <ul class="clean">
+    <li>Up to about 3.3 kW via a third-party adapter (not supplied). A fridge should run easily.</li>
+    <li>One owner estimates a 120–200 W ice maker would use about 4% battery over 8 hours.</li>
+    <li>One owner asked for a kit with better weather protection; no answer.</li>
+  </ul>
+
+  <h2>Battery</h2>
+  <ul class="clean">
+    <li>One member: avoid long periods at 0% or 100%, otherwise drive it and the BMS protects the battery.</li>
+    <li>Owners have seen 4% as the lowest. One reports driving 6+ km slowly at 0%.</li>
+  </ul>
+</main>
+</body>
+</html>

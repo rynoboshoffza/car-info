@@ -29,7 +29,7 @@ git push -u origin main
 
 ## Every update afterwards
 
-1. Give Claude the new chat export; it edits the pages and `docs/assets/site-data.js` (last-updated date, changelog).
+1. Give Claude the new chat export; it edits the pages and `docs/assets/site-data.js` (last-processed-message timestamp, changelog).
 2. Publish:
 
 ```bash

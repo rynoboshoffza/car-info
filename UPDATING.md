@@ -1,27 +1,24 @@
 # Updating the site
 
-The site lives in `docs/` (plain HTML/CSS/JS, no build step). Raw chat exports stay outside `docs/` and are git-ignored, because they contain phone numbers.
-
-## Publishing
-See `DEPLOY.md` for the step-by-step GitHub Pages guide and where to paste the WhatsApp link (`docs/assets/site-data.js`, `whatsappUrl`).
-
-## Dealers
-Dealers are never named, not even by codename. `dealers.html` summarises experiences at province level and explains why. When processing a delta, fold new dealer feedback into those summaries without adding any branch, group or staff detail that could identify a single dealership.
+The site lives in `docs/` (plain HTML/CSS/JS, no build step). It covers the Chery Q only. Raw chat exports stay outside `docs/` and are git-ignored (any file with "chat" in its name), because they contain phone numbers.
 
 ## Processing a chat delta
-1. Save the new export in this folder (e.g. `chat-2026-11-20.txt`) or in `chats/`.
+1. Save the new export in this folder (any name containing "chat", e.g. `20-11-chat.masked.md`).
 2. Ask Claude: "Update the site with this delta." It should:
-   - add new findings to the relevant model pages (dealer truths, charging, stock, tips, tyres, issues),
-   - mark answered items in `known-issues.html` open questions and refresh stock/ETA data,
-   - update `docs/assets/site-data.js`: `lastUpdated`, `chatCovered`, and add a `changelog` entry.
-3. The "Updated …" badge in the header and the footer read from `site-data.js`, so nothing else needs touching.
+   - add new findings to the relevant tab: Dealer truths, Charging, Providers, Conflicting info, Stock & shipping, Tyres & wheels, Tips, Issues & questions, Links;
+   - move answered open questions out of Issues & questions, and add any new disagreements to Conflicting info;
+   - update `docs/assets/site-data.js`: set `lastMessage` to the timestamp of the last message processed (`YYYY-MM-DDTHH:MM`) and add a `changelog` entry with the same value in `through`.
+3. The header and footer read the timestamp from `site-data.js`. Nothing else needs touching.
+
+## WhatsApp link
+Paste the invite link into `whatsappUrl` in `docs/assets/site-data.js`. It appears once, as the "Join WhatsApp group" button in the header.
 
 ## Editorial rules
+- Information only: no intros, slogans or advice padding.
 - Anonymise: no phone numbers, member names, salesperson names, or dealership/branch names. Dealers are summarised by province only.
-- Label claims: `tag report` (owner report), `tag open` (unverified/open), `tag fact` (spec/official).
-- Dealer comments are single anecdotes, framed as such.
+- Providers (third-party businesses) may be named for positive or neutral, factual feedback only. No contact details; owners ask in the group.
+- Say "one owner" or "several owners". Don't present a single anecdote as general fact.
+- Mark disagreement in Conflicting info rather than picking a winner.
 
-## Adding another car model
-1. Copy `docs/chery-q/` to `docs/<new-slug>/` and replace the content.
-2. Add an entry to `models` in `docs/assets/site-data.js` (slug, name, tagline, pages). The home page cards and sub-navigation update automatically.
-3. Set each page's `<body data-model="<new-slug>" data-page="<page-slug>">`.
+## Publishing
+See `DEPLOY.md`.
