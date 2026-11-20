@@ -15,40 +15,74 @@
 
   <h2>Public charging</h2>
   <ul class="clean">
-    <li><strong>RF card:</strong> the card supplied with the car is linked to the GridCars app. Load funds in that app, then tap the card. One owner used it without registration on BMW, Mercedes and Rubicon chargers. A single load plus the card was one owner's advice; another suggested loading only on arrival. Refund and expiry terms of other apps were not discussed.</li>
-    <li><strong>Prices:</strong> one forwarded mall session receipt: 35.11 kWh to 90% SoC for "T 289.12" (tokens; about 8.2 per kWh if 1 token = R1). Another owner questioned a rate at an Eskom site (image only).</li>
-    <li>Charger apps and networks: see <a href="providers.html">Providers</a>.</li>
+    <li><strong>RF card:</strong> the card supplied with the car is linked to the GridCars app. Load funds in that app, then tap the card. One owner used it without registration on BMW, Mercedes and Rubicon chargers. A single load plus the card was one owner's advice; another suggested loading only on arrival. Refund and expiry terms of other apps were not discussed. The card is a chip: one owner warns not to punch a keyring hole in it.</li>
+    <li><strong>AC limit:</strong> the car charges at about 6.6 kW AC (owners say 6.6–7.1 kW). Several owners say three-phase 11/22 kW is not supported, so a 22 kW cable gains nothing.</li>
+    <li><strong>DC:</strong> one owner went from 19% to 100% in 40 min; another saw a peak of about 96 kW.</li>
+    <li><strong>Prices per kWh:</strong>
+      <ul class="clean">
+        <li>An Eskom site: about R4.85 (one owner, "I think"). One owner says Eskom seems cheapest.</li>
+        <li>A solar-powered site: R3.49, dropping to R2.49 when its batteries are above 90%.</li>
+        <li>City of Cape Town: R4–R4.50 (one owner).</li>
+        <li>A mall session receipt: 35.11 kWh to 90% SoC for "T 289.12" (tokens; about 8.2 per kWh if 1 token = R1).</li>
+      </ul>
+    </li>
+    <li><strong>Charger will not start:</strong> two owners at two different DC sites (one with a worn plug) got charging going by holding the plug up, as when pouring fuel, and then locking the car.</li>
+    <li>Apps, route planners and networks: see <a href="providers.html">Providers</a>.</li>
   </ul>
 
   <h2 id="cables">Own cable</h2>
   <ul class="clean">
     <li>A unit marked <strong>SOCKET</strong> needs your own Type 2 AC cable.</li>
-    <li>Combi chargers (AC + DC) usually have a cable attached, "about 80% of the time" per one owner.</li>
-    <li>Older AC units often have no cable.</li>
-    <li>BMW and Mercedes AC chargers need your own cable.</li>
+    <li>Combi chargers (AC + DC) usually have a cable attached, "about 80% of the time" per one owner. DC chargers always have a cable. Older AC units often have none, and a solar and battery site on the N4 had six 22 kW AC chargers without cables.</li>
+    <li>BMW, Mercedes and at least one small-town public charger need your own cable.</li>
+    <li><strong>Length:</strong> 3 m is considered too short (the car is about 4 m long). Owners suggest 5 m; one bought 8 m.</li>
+    <li><strong>Prices:</strong> a 7.4 kW 5 m Type 2 cable with storage bag about R2,600 (delivered in 2 days for one owner); a 22 kW cable about R3,000.</li>
   </ul>
 
   <h2 id="home">Home charging</h2>
   <div class="tablewrap"><table>
     <tr><th>Item</th><th>Reported</th></tr>
-    <tr><td>Wall charger</td><td>7 kW, 32 A maximum, adjustable in the Tellus Power app (Bluetooth).</td></tr>
+    <tr><td>Wall charger</td><td>7 kW, made by Tellus Power. One owner says any Type 2 wall charger works with the car.</td></tr>
     <tr><td>Installation (Cape Town, Nov 2026)</td><td>R6,106.50 incl. VAT, 20 m run of 6 mm² cable.</td></tr>
     <tr><td>Time</td><td>About 6 h for a full charge. 51% to 90% took just over 2 h for one owner.</td></tr>
   </table></div>
 
-  <h3 style="margin-top:20px">Wall charger current and wiring</h3>
+  <h3 style="margin-top:20px">Wall charger (Tellus Power)</h3>
+  <ul class="clean">
+    <li><strong>In the box:</strong> a small flat mounting bracket (about matchbox size; two owners missed it at first), 2 RFID cards, an info card and screws. Two owners received the charger from the dealer without a box or manual.</li>
+    <li><strong>To start:</strong> tap an RFID card (bottom right of the unit). The app can disable the card requirement so scheduled charging works without tapping (one owner).</li>
+    <li><strong>App setup (one owner's steps):</strong> connect the charger to wifi, then Me &gt; Bluetooth &gt; select the charger &gt; Basic. Rated and maximum current can be adjusted; press "write" after each change, then reboot the charger.</li>
+    <li><strong>Lights and switch:</strong> red = fault, blue = standby, green = charging. The red knob on the side works as a cut-off switch (a fault showed until it was turned).</li>
+    <li><strong>Faults reported:</strong> one new installation shows a green port light on the car but a steady blue light on the box, and the app "starts" charging with no effect (unresolved). One owner gets an error when updating the firmware.</li>
+    <li>App feedback: see <a href="providers.html">Providers</a>.</li>
+  </ul>
+
+  <h3 style="margin-top:20px">Current and wiring</h3>
   <p class="small muted">Owner discussion, not electrical advice. Have a qualified electrician inspect the installation and issue a compliance certificate.</p>
   <ul class="clean">
-    <li>Owners' suggested amps and cable sizes differ: see <a href="conflicts.html">Conflicting info</a>.</li>
+    <li>Owners' current settings and cable sizes differ: see <a href="conflicts.html">Conflicting info</a>.</li>
     <li>One owner's distribution board feels warm while charging; an electrician was booked to check.</li>
     <li>Other factors raised: cable run length, the size of the feed to any sub-board, and loose connections, which high current exposes.</li>
+    <li>One owner's installer used only the top 2 mounting screws; check the unit is fully fixed.</li>
+  </ul>
+
+  <h3 style="margin-top:20px">Portable charger (3-pin)</h3>
+  <ul class="clean">
+    <li>Owners report 1,000 W to 2.5–3.2 kW, depending on the circuit breaker and socket. The Q has no setting for the charging current.</li>
+    <li>One owner's portable charger melted a 16 A plug; poor contact at the plug or under-rated wiring was suggested. Check the socket's rating and earthing.</li>
   </ul>
 
   <h2>Solar and inverter</h2>
-  <ul class="clean">
-    <li>One owner charged from 51% to 90% on solar at no cost, with 8–10 kW of panels and about 6.3 kW at the inverter.</li>
-    <li>One owner charges from a 12 kW Deye inverter. On cloudy, rainy days with time-of-use switched off, the car drew about 6.5 kW from the municipal supply while the home battery was full. Their workaround is a separate plug for the portable charger on cloudy days to draw less. Lowering the wall charger current was also suggested.</li>
-  </ul>
+  <div class="tablewrap"><table>
+    <tr><th>Setup</th><th>Reported</th></tr>
+    <tr><td>6 kW inverter, 8 × 650 W panels (planned, battery later)</td><td>One owner expects about 3 kW charging (the slow charger), taking all day.</td></tr>
+    <tr><td>8 kW inverter, 16 panels, 3 × 5.5 kWh batteries</td><td>Slow charge only. The owner plans 20 kW and 27 panels to add the 7 kW wall charger, and says more than 10 kW is needed for it.</td></tr>
+    <tr><td>5.5 kW inverter</td><td>Wall charger set to 15 A, adding about 2 h to the charge, so it can charge from solar.</td></tr>
+    <tr><td>10 kW Deye, 13.4 kWh battery, 8 kW panels</td><td>About 6 kW realistic. Batteries are full by 13:00; about 10 (max 15) kWh a day can be had without Eskom, if the car is home.</td></tr>
+    <tr><td>12 kW Deye, 16 × 610 W panels, 14.3 kWh battery</td><td>The car drains the battery quickly; the owner is adding another. On cloudy, rainy days with time-of-use off, the car drew about 6.5 kW from the municipal supply while the battery was full. Workaround: a separate plug for the portable charger on cloudy days.</td></tr>
+    <tr><td>8–10 kW of panels, about 6.3 kW at the inverter</td><td>One owner charged from 51% to 90% at no cost.</td></tr>
+  </table></div>
+  <p class="small muted" style="margin-top:8px">If the wall charger exceeds what the inverter supplies, owners say lowering its current in the app (for example to 5 kW) makes the grid cover the rest.</p>
 
   <h2 id="release">Plug stuck in the car</h2>
   <ul class="clean">
@@ -67,15 +101,18 @@
 
   <h2 id="v2l">V2L</h2>
   <ul class="clean">
-    <li>Up to about 3.3 kW via a third-party adapter (not supplied; see <a href="providers.html">Providers</a>). A fridge should run easily.</li>
+    <li><strong>Output:</strong> about 3.3 kW (about 15 A) through a third-party adapter (not supplied; see <a href="providers.html">Providers</a>). A fridge should run easily. Owners have run a kettle, woodworking tools, camp lights, an air pump, a laptop and a 220 V fridge.</li>
+    <li><strong>Buy the right adapter:</strong> it must fit the car's inlet. One owner's adapter from an online retailer plugged into a charger, not the car (wrong pinout) and was returned. An adapter from a charging retailer, rated 3.6 kW, works for several owners (about R1,500).</li>
+    <li><strong>Heat and cabling:</strong> full output at 15 A heats the connection points. Owners advise quality connectors (Crabtree type) and FTe (flat twin and earth) or Surfix cable, not Cabtyre, which an owner says is not allowed as a fixed installation.</li>
+    <li><strong>Cut-off:</strong> one owner says V2L stops at 30% battery.</li>
+    <li><strong>Into a home inverter:</strong> one installer limited output to 2 kW and says it is "not recommended for daily use", only as emergency input. Whether V2L cycling affects the battery warranty is unknown.</li>
     <li>One owner estimates a 120–200 W ice maker would use about 4% battery over 8 hours.</li>
-    <li>One owner asked for a kit with better weather protection; no answer.</li>
   </ul>
 
   <h2>Battery</h2>
   <ul class="clean">
-    <li>One member: avoid long periods at 0% or 100%, otherwise drive it and the BMS protects the battery.</li>
-    <li>Owners have seen 4% as the lowest. One reports driving 6+ km slowly at 0%.</li>
+    <li>Owners have seen 3–4% as the lowest. One reports driving 6+ km slowly at 0%.</li>
+    <li>Charging habits and manual guidance: see <a href="conflicts.html">Conflicting info</a>.</li>
   </ul>
 </main>
 </body>

@@ -4,7 +4,7 @@ window.SITE = {
   name: "Chery Q Owner Notes",
 
   /* Timestamp of the LAST MESSAGE processed from the chat export (local time, as shown in the export). Shown in the footer only. */
-  lastMessage: "2026-11-16T08:47",
+  lastMessage: "2026-11-20T18:04",
 
   /* >>> PASTE YOUR WHATSAPP GROUP INVITE LINK BETWEEN THE QUOTES (e.g. "https://chat.whatsapp.com/XXXXXXXX").
      It shows once, as the "Join WhatsApp group" button in the header. Empty = button hidden. */
